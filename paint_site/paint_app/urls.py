@@ -1,5 +1,7 @@
 from django.urls import path
 
-urlpatterns = [
+from paint_app.views import ColorPickerView
 
+urlpatterns = [
+    path('', ColorPickerView.as_view(), name='paint'),
 ]
